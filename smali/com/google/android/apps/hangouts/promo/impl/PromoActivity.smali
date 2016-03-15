@@ -471,6 +471,16 @@
     .line 90
     iget v1, p0, Lcom/google/android/apps/hangouts/promo/impl/PromoActivity;->o:I
 
+    invoke-virtual {p0}, Lcom/google/android/apps/hangouts/promo/impl/PromoActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v1, 0x7f0e0051
+
+    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v1
+
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setBackgroundColor(I)V
 
     goto :goto_1
